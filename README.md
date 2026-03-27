@@ -1,5 +1,9 @@
 # gsd-wmux
 
+[![npm version](https://img.shields.io/npm/v/gsd-wmux)](https://www.npmjs.com/package/gsd-wmux)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Node.js ≥18](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](package.json)
+
 **Multi-backend multiplexer integration for [GSD](https://github.com/gsd-build/gsd-2) / [pi](https://github.com/gsd-build/pi)**
 
 Drop-in replacement for the stock `@gsd/cmux` library that adds WezTerm support and makes it trivial to add new backends (tmux, zellij, psmux, etc.).
@@ -133,6 +137,17 @@ npm install
 npm run build
 node scripts/install.js
 ```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for a full development guide.
+
+## Documentation
+
+| Document | Description |
+|---|---|
+| [docs/architecture.md](docs/architecture.md) | System architecture and data flow diagrams |
+| [docs/api-reference.md](docs/api-reference.md) | Complete TypeScript API reference |
+| [docs/wezterm-setup.md](docs/wezterm-setup.md) | WezTerm status bar setup and customisation |
+| [docs/backends.md](docs/backends.md) | Guide to implementing new multiplexer backends |
 
 ## License
 
