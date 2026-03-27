@@ -1,0 +1,42 @@
+{
+  "name": "gsd-wmux",
+  "version": "0.1.0",
+  "description": "Multiplexer backend abstraction for GSD/pi — WezTerm, cmux, and more",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "scripts/",
+    "wezterm/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "install-ext": "node scripts/install.js",
+    "test": "node --test dist/tests/"
+  },
+  "bin": {
+    "gsd-wmux": "scripts/install.js"
+  },
+  "keywords": [
+    "gsd",
+    "pi",
+    "wezterm",
+    "cmux",
+    "multiplexer",
+    "terminal",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.5.0"
+  }
+}
